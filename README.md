@@ -9,7 +9,7 @@ In this challenge, you will create a new microservice to moderate new comments. 
 
 ## Setup
 
-1. Fork this repository.
+1. Fork [this repository](https://github.com/Masterschool-Web/micro-service-challenge-1).
 1. Clone it to your local machine.
 1. Run `npm run install_all` to install all the necessary microservices.
 1. Run `npm run dev` to start all the microservices.
