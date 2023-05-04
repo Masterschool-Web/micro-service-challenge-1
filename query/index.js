@@ -48,5 +48,5 @@ app.get("/posts-and-comments", (req, res) => {
 });
 
 app.listen(3002, () => {
-  console.log("Server is running on port 3002");
+  console.log("Query server is running on port 3002");
 });

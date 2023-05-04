@@ -39,5 +39,5 @@ app.get("/posts", (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+  console.log("Post server is running on port 3000");
 });
