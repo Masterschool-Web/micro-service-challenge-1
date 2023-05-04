@@ -10,7 +10,7 @@ let id = 0;
 const postsWithComments = {
   0: {
     id: 0,
-    title: "This is a posts",
+    title: "This is a post",
     comments: [
       {
         id: 0,
@@ -36,10 +36,24 @@ app.post("/events", (req, res) => {
   }
 
   if (type === "COMMENT_CREATED") {
-    const { id, text, postId } = data;
+    const { id, postId } = data;
 
     const post = postsWithComments[postId];
-    post.comments.push({ id, text, postId });
+    post.comments.push({ id, postId, status: "pending" });
+  }
+
+  if (type === "COMMENT_UPDATED") {
+    const { id, text, postId, status } = data;
+
+    const post = postsWithComments[postId];
+    const comment = post.comments.find((comment) => {
+      return comment.id === id;
+    });
+    comment.status = status;
+
+    if (status === "approved") {
+      comment.text = text;
+    }
   }
 });
 

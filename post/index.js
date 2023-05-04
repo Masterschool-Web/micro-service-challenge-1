@@ -21,7 +21,7 @@ app.post("/posts/", (req, res) => {
     title,
   };
 
-  posts[id] = post;
+  posts[id] = post; // "database"
 
   axios
     .post("http://localhost:3002/events", {
