@@ -8,8 +8,8 @@ In this challenge, you will create a new microservice to moderate new comments. 
 
 1. Fork this repository.
 1. Clone it to your local machine.
-1. Run npm run install_all to install all the necessary microservices.
-1. Run npm run dev to start all the microservices.
+1. Run `npm run install_all` to install all the necessary microservices.
+1. Run `npm run dev` to start all the microservices.
    Challenge
 
 Your challenge is to build a microservice that is notified when a new comment is created and can approve or reject it. The approval or rejection should notify the query service, not the comment service. While waiting for approval or rejection, the comment's status should be "pending".
