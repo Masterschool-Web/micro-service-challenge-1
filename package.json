@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "event": "cd event && npm start",
+    "comment": "cd comment && npm start",
+    "query": "cd query && npm start",
+    "dev": "npm run event & npm run comment & npm run query",
+    "install_all": "cd event && npm install && cd ../comment && npm install && cd ../query && npm install"
   },
   "keywords": [],
   "author": "",
