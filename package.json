@@ -8,7 +8,7 @@
     "comment": "cd comment && npm start",
     "query": "cd query && npm start",
     "moderation": "cd moderation && npm start",
-    "dev": "npm run event & npm run comment & npm run query & npm run moderation",
+    "dev": "npm run post & npm run event & npm run comment & npm run query & npm run moderation",
     "install_all": "cd event && npm install && cd ../comment && npm install && cd ../query && npm install && cd ../moderation && npm install"
   },
   "keywords": [],
